@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './assets/icons-1.5.0/font/bootstrap-icons.css';
 import './assets/css/custom-css.css';
 import './assets/css/list-groups.css';
 import './App.css';

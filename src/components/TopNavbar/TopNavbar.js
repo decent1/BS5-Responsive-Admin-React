@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import logo from '../../images/bootstrap-logo.svg';
 
 class TopNavbar extends Component {
     render() {
@@ -7,7 +8,7 @@ class TopNavbar extends Component {
                 <nav className="navbar fixed-top navbar-expand-md navbar-dark bg-primary">
                     <div className="container-fluid">
                         <a className="navbar-brand" href="#">
-                            <img src="images/bootstrap-logo.svg" alt="" width={30} height={24} className="d-inline-block align-text-top" />
+                            <img src={logo} alt="" width={30} height={24} className="d-inline-block align-text-top" />
                             ERP App
                         </a>
                         <button id="navbar-togler" className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
