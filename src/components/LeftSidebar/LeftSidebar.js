@@ -1,10 +1,26 @@
 import React, { Component } from 'react';
 
 class LeftSidebar extends Component {
+    toggleSidebar = () => {
+        // var newColor = this.state.color == 'white' ? 'black' : 'white';
+        var menu_toggleer = document.getElementById('menu-toggle');
+
+        // this.setState({ color: newColor });
+        console.log(menu_toggleer.parentNode.parentNode.getAttribute('class'));
+        let sidebarToggledClassName = menu_toggleer.parentNode.parentNode.getAttribute('class');
+        if(sidebarToggledClassName=='full-outer')
+        {
+            menu_toggleer.parentNode.parentNode.classList.remove('full-outer');
+            menu_toggleer.parentNode.parentNode.classList.add('full-outer-toggled');
+        }else{
+            menu_toggleer.parentNode.parentNode.classList.remove('full-outer-toggled');
+            menu_toggleer.parentNode.parentNode.classList.add('full-outer');
+        }
+    }
     render() {
         return (
             <>
-                <div className="btn-sidebar-toggler" id="menu-toggle">
+                <div className="btn-sidebar-toggler" id="menu-toggle" onClick={this.toggleSidebar}>
                     <i className="bi bi-list" />
                 </div>
                 <div className="sidebar-inner">
