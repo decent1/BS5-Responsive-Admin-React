@@ -7,9 +7,9 @@ import './App.css';
 import TopNavbar from './components/TopNavbar/TopNavbar';
 import MainPage from './components/MainPage/MainPage';
 import LeftSidebar from './components/LeftSidebar/LeftSidebar';
-import {Route, Switch} from 'react-router-dom';
-import Locations from './components/Locations';
-import Items from './components/Items';
+import { Route, Switch } from 'react-router-dom';
+import Locations from './components/Inventory/Reference/Locations';
+import Items from './components/Inventory/Reference/Items';
 import Error from './components/Error';
 
 function App() {
@@ -25,12 +25,14 @@ function App() {
           {/* <Locations />
           <Items /> */}
 
-          <Switch>
-            <Route path="/" component={MainPage} exact />
-            <Route path="/inventory/reference/locations" component={Locations} />
-            <Route path="/inventory/reference/items" component={Items} />
-            <Route component={Error} />
-          </Switch>
+          <div className="container-fluid" style={{ paddingTop: '3px' }}>
+            <Switch>
+              <Route path="/" component={MainPage} exact />
+              <Route path="/inventory/reference/locations" component={Locations} />
+              <Route path="/inventory/reference/items" component={Items} />
+              <Route component={Error} />
+            </Switch>
+          </div>
         </div>
       </div>
     </>
