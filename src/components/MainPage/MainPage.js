@@ -48,7 +48,7 @@ class MainPage extends Component {
                                         <div className="col-md-3">
                                             <label htmlFor="validationCustom04" className="form-label">State</label>
                                             <select className="form-select" id="validationCustom04" required>
-                                                <option selected disabled value>Choose...</option>
+                                                <option value>Choose...</option>
                                                 <option>...</option>
                                             </select>
                                             <div className="invalid-feedback">

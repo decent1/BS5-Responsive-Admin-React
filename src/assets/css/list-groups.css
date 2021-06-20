@@ -1,3 +1,8 @@
+.list-group-item {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    font-size: 0.85rem;
+}
 .list-group .list-group {
     display: none;
     margin-bottom: 0;
