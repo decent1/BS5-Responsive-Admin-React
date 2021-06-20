@@ -31,3 +31,8 @@
 .list-group>.list-group>.list-group>.list-group>.list-group-item {
     padding-left: 4.5rem;
 }
+
+.side_nav_active {
+    color: #fff;
+    background-color: #0d6efd;
+}

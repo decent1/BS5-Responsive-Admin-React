@@ -7,6 +7,10 @@ import './App.css';
 import TopNavbar from './components/TopNavbar/TopNavbar';
 import MainPage from './components/MainPage/MainPage';
 import LeftSidebar from './components/LeftSidebar/LeftSidebar';
+import {Route, Switch} from 'react-router-dom';
+import Locations from './components/Locations';
+import Items from './components/Items';
+import Error from './components/Error';
 
 function App() {
   return (
@@ -17,7 +21,16 @@ function App() {
           <LeftSidebar />
         </div>
         <div id="main-page-wrapper" className="main-page pad-x-10">
-          <MainPage />
+          {/* <MainPage /> */}
+          {/* <Locations />
+          <Items /> */}
+
+          <Switch>
+            <Route path="/" component={MainPage} exact />
+            <Route path="/inventory/reference/locations" component={Locations} />
+            <Route path="/inventory/reference/items" component={Items} />
+            <Route component={Error} />
+          </Switch>
         </div>
       </div>
     </>

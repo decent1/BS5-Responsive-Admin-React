@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 
 class LeftSidebar extends Component {
     toggleSidebar = () => {
@@ -71,8 +72,8 @@ class LeftSidebar extends Component {
                                 <i className="glyphicon glyphicon-chevron-right" />Reference
                             </a>
                             <div className="list-group" id="item-2-1">
-                                <a href="#" className="list-group-item">Locations</a>
-                                <a href="#" className="list-group-item">Items</a>
+                                <NavLink activeClassName="side_nav_active" to="/inventory/reference/locations" className="list-group-item">Locations</NavLink>
+                                <NavLink activeClassName="side_nav_active" to="/inventory/reference/items" className="list-group-item">Items</NavLink>
                                 <a href="#" className="list-group-item">Items Mapping With Account Code</a>
                                 <a href="#" className="list-group-item">Supplier</a>
                             </div>

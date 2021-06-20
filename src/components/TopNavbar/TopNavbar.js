@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../../images/bootstrap-logo.svg';
+import { Link } from 'react-router-dom';
 
 class TopNavbar extends Component {
     render() {
@@ -7,10 +8,10 @@ class TopNavbar extends Component {
             <>
                 <nav className="navbar fixed-top navbar-expand-md navbar-dark bg-primary">
                     <div className="container-fluid">
-                        <a className="navbar-brand" href="#">
+                        <Link className="navbar-brand" to="/">
                             <img src={logo} alt="" width={30} height={24} className="d-inline-block align-text-top" />
                             ERP App
-                        </a>
+                        </Link>
                         <button id="navbar-togler" className="navbar-toggler" type="button">
                             <span className="navbar-toggler-icon" />
                         </button>
