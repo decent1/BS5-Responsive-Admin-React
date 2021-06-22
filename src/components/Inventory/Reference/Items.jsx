@@ -2,7 +2,7 @@ import React from 'react';
 
 const Items = () => {
     return (
-        <>
+        <div>
             <div className="row">
                 <div className="col">
                     <div className="card">
@@ -16,7 +16,7 @@ const Items = () => {
                                     <label htmlFor="validationCustom02" className="form-label">Item Code</label>
                                     <div className="input-group">
                                         <input type="text" className="form-control" id="validationCustom02" defaultValue="AMPIL250" required />
-                                        <span class="input-group-text"><i class="bi bi-search"></i></span>
+                                        <span className="input-group-text"><i className="bi bi-search"></i></span>
                                     </div>
                                     <div className="valid-feedback">
                                         Looks good!
@@ -128,7 +128,7 @@ const Items = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 };
 

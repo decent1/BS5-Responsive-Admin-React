@@ -2,7 +2,7 @@ import React from 'react';
 
 const Locations = () => {
     return (
-        <>
+        <div>
             <div className="row">
                 <div className="col">
                     <div className="card">
@@ -15,7 +15,7 @@ const Locations = () => {
                                     <label htmlFor="validationCustom02" className="form-label">Location Code</label>
                                     <div className="input-group">
                                         <input type="text" className="form-control" id="validationCustom02" defaultValue="Loc1" required />
-                                        <span class="input-group-text"><i class="bi bi-search"></i></span>
+                                        <span className="input-group-text"><i className="bi bi-search"></i></span>
                                     </div>
                                     <div className="valid-feedback">
                                         Looks good!
@@ -46,7 +46,7 @@ const Locations = () => {
                                     <label htmlFor="validationCustom02" className="form-label">Parent Location Code</label>
                                     <div className="input-group">
                                         <input type="text" className="form-control" id="validationCustom02" defaultValue="ParentLoc1" required />
-                                        <span class="input-group-text"><i class="bi bi-search"></i></span>
+                                        <span className="input-group-text"><i className="bi bi-search"></i></span>
                                     </div>
                                     <div className="valid-feedback">
                                         Looks good!
@@ -64,7 +64,7 @@ const Locations = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 };
 

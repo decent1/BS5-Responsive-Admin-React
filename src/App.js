@@ -15,7 +15,7 @@ import Error from './components/Error';
 
 function App() {
   return (
-    <>
+    <div>
       <TopNavbar />
       <div id="wrapper" className="full-outer">
         <div id="sidebar" className="sidebar-margin float-left shads padx-10-0">
@@ -36,7 +36,7 @@ function App() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
