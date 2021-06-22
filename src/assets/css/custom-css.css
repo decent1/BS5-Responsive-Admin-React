@@ -98,3 +98,7 @@ body {
     font-size: .875rem;
     border-radius: .2rem;
   }
+
+  .bi-search {
+      cursor: pointer;
+  }

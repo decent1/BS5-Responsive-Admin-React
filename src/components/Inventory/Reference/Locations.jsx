@@ -13,7 +13,10 @@ const Locations = () => {
                             <form className="row g-3 needs-validation form-control-all-sm" noValidate>
                                 <div className="col-md-4">
                                     <label htmlFor="validationCustom02" className="form-label">Location Code</label>
-                                    <input type="text" className="form-control" id="validationCustom02" defaultValue="Loc1" required />
+                                    <div className="input-group">
+                                        <input type="text" className="form-control" id="validationCustom02" defaultValue="Loc1" required />
+                                        <span class="input-group-text"><i class="bi bi-search"></i></span>
+                                    </div>
                                     <div className="valid-feedback">
                                         Looks good!
                                     </div>
@@ -38,10 +41,13 @@ const Locations = () => {
                                     </div>
                                 </div>
 
-                                
+
                                 <div className="col-md-4">
                                     <label htmlFor="validationCustom02" className="form-label">Parent Location Code</label>
-                                    <input type="text" className="form-control" id="validationCustom02" defaultValue="ParentLoc1" required />
+                                    <div className="input-group">
+                                        <input type="text" className="form-control" id="validationCustom02" defaultValue="ParentLoc1" required />
+                                        <span class="input-group-text"><i class="bi bi-search"></i></span>
+                                    </div>
                                     <div className="valid-feedback">
                                         Looks good!
                                     </div>
