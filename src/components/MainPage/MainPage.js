@@ -8,10 +8,10 @@ class MainPage extends Component {
                     <div className="col">
                         <div className="card">
                             <div className="card-header">
-                                Featured
+                                Sample Form
                             </div>
                             <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
+                                {/* <h5 className="card-title">Card title</h5> */}
                                 <form className="row g-3 needs-validation" noValidate>
                                     <div className="col-md-4">
                                         <label htmlFor="validationCustom01" className="form-label">First name</label>
