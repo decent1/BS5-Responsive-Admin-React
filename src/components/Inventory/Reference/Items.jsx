@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import ModalDialog from '../../shared/ModalDialog';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 
-class Items extends Component{
-    constructor(props){
+class Items extends Component {
+    constructor(props) {
         super(props);
         this.myModalDialog = React.createRef();
     }
-    triggerChildAlert(){
+    triggerChildAlert() {
         this.myModalDialog.menuItemClicked();
     }
-    render(){
+    render() {
         return (
             <div>
                 <div className="row">
@@ -32,7 +33,7 @@ class Items extends Component{
                                         </div>
                                     </div>
                                     <div className="col-md-4">
-                                        <button onClick={this.triggerChildAlert}>Click me</button>
+
                                     </div>
                                     <div className="col-md-4">
                                         <label htmlFor="validationCustom01" className="form-label">Item Name</label>
@@ -66,7 +67,7 @@ class Items extends Component{
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div className="col-md-4">
                                         <label htmlFor="validationCustom02" className="form-label">Parent Item Code</label>
                                         <div className="input-group">
@@ -84,7 +85,7 @@ class Items extends Component{
                                             Looks good!
                                         </div>
                                     </div>
-    
+
                                     <div className="col-md-12">
                                         <label htmlFor="validationCustom03" className="form-label">Description</label>
                                         <input type="text" className="form-control" id="validationCustom03" required />
@@ -92,7 +93,7 @@ class Items extends Component{
                                             Please provide a valid city.
                                         </div>
                                     </div>
-    
+
                                     <div className="col-12">
                                         <button className="btn btn-primary" type="submit">Submit form</button>
                                     </div>
@@ -140,7 +141,6 @@ class Items extends Component{
                         </div>
                     </div>
                 </div>
-                <ModalDialog ref={this.myModalDialog} />
             </div>
         );
     }
