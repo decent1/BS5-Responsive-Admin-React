@@ -1,15 +1,25 @@
 import React, { Component } from 'react';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
+// import Modal from 'react-bootstrap/Modal';
+// import Button from 'react-bootstrap/Button';
+import { Button, Modal } from 'react-bootstrap';
 
 class Items extends Component {
-    constructor(props) {
-        super(props);
-        this.myModalDialog = React.createRef();
+    constructor() {
+        super();
+        this.state = {
+            show: false
+        }
     }
-    triggerChildAlert() {
-        this.myModalDialog.menuItemClicked();
+
+    openModal() {
+        this.setState({ show: true })
     }
+
+    closeModal() {
+        this.setState({ show: false })
+    }
+    
+
     render() {
         return (
             <div>
@@ -33,7 +43,18 @@ class Items extends Component {
                                         </div>
                                     </div>
                                     <div className="col-md-4">
-
+                                        <Button onClick={() => { this.openModal() }}>Open Modal</Button>
+                                        <Modal show={this.state.show}>
+                                            <Modal.Header>
+                                                This is header
+                                            </Modal.Header>
+                                            <Modal.Body>
+                                                This is modal body
+                                            </Modal.Body>
+                                            <Modal.Footer>
+                                                <Button onClick={() => { this.closeModal() }}>Close Modal</Button>
+                                            </Modal.Footer>
+                                        </Modal>
                                     </div>
                                     <div className="col-md-4">
                                         <label htmlFor="validationCustom01" className="form-label">Item Name</label>
