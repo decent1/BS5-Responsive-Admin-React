@@ -18,13 +18,13 @@ class Items extends Component {
     closeModal() {
         this.setState({ show: false })
     }
-    
+
 
     render() {
         return (
             <div>
                 <div className="row">
-                    <div className="col">
+                    <div className="col col-12">
                         <div className="card">
                             <div className="card-header">
                                 Items
@@ -36,25 +36,11 @@ class Items extends Component {
                                         <label htmlFor="validationCustom02" className="form-label">Item Code</label>
                                         <div className="input-group">
                                             <input type="text" className="form-control" id="validationCustom02" defaultValue="AMPIL250" required />
-                                            <span className="input-group-text"><i className="bi bi-search"></i></span>
+                                            <span className="input-group-text" onClick={() => { this.openModal() }}><i className="bi bi-search"></i></span>
                                         </div>
                                         <div className="valid-feedback">
                                             Looks good!
                                         </div>
-                                    </div>
-                                    <div className="col-md-4">
-                                        <Button onClick={() => { this.openModal() }}>Open Modal</Button>
-                                        <Modal show={this.state.show}>
-                                            <Modal.Header>
-                                                This is header
-                                            </Modal.Header>
-                                            <Modal.Body>
-                                                This is modal body
-                                            </Modal.Body>
-                                            <Modal.Footer>
-                                                <Button onClick={() => { this.closeModal() }}>Close Modal</Button>
-                                            </Modal.Footer>
-                                        </Modal>
                                     </div>
                                     <div className="col-md-4">
                                         <label htmlFor="validationCustom01" className="form-label">Item Name</label>
@@ -159,6 +145,21 @@ class Items extends Component {
                                     </tbody>
                                 </table>
                             </div>
+                        </div>
+                    </div>
+                    <div className="col col-12">
+                        <div className="col-md-4">
+                            <Modal show={this.state.show}>
+                                <Modal.Header>
+                                    This is header
+                                </Modal.Header>
+                                <Modal.Body>
+                                    This is modal body
+                                </Modal.Body>
+                                <Modal.Footer>
+                                    <Button onClick={() => { this.closeModal() }}>Close Modal</Button>
+                                </Modal.Footer>
+                            </Modal>
                         </div>
                     </div>
                 </div>

@@ -19,7 +19,7 @@ body {
     -moz-transition: margin .25s ease-out;
     -o-transition: margin .25s ease-out;
     transition: margin .25s ease-out;
-    z-index: 99999;
+    z-index: 999;
 }
 
 .sidebar-margin {
@@ -52,10 +52,13 @@ body {
 .full-outer-toggled .sidebar-margin {
     margin-left: 0px;
 }
-
+.full-outer-toggled .btn-sidebar-toggler {
+    right: -42px;
+}
 .full-outer-toggled .main-page {
     min-width: 0;
     margin-left: 300px;
+    visibility: hidden;
 }
 /* Padding classes Begin */
 .pad-x-10 {
@@ -83,12 +86,16 @@ body {
     .btn-sidebar-toggler {
         right: -20px;
     }
+    .full-outer-toggled .btn-sidebar-toggler {
+        right: -20px;
+    }
     .full-outer-toggled .sidebar-margin {
-        margin-left: -290px;
+        margin-left: -300px;
     }
     .full-outer-toggled .main-page {
         min-width: 0;
         margin-left: 0px;
+        visibility: visible;
     }
 }
 
